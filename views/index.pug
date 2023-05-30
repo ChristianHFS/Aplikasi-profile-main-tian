@@ -1,0 +1,141 @@
+html(lang="id")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet", href="assets/css/style.css")
+    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css")
+
+    script(src="https://code.jquery.com/jquery-3.6.0.min.js")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js")   
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js") 
+    script(src="node_modules/three/build/three.js") 
+
+    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css")
+    link(rel="stylesheet", href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css", integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl", crossorigin="anonymous")
+    link(rel="shortcut icon", href="https://storage.googleapis.com/aplikasi-profile.appspot.com/images/Screenshot_3.png", type="image")
+
+    title Christian Herbert Fritz
+
+  body
+    //- NAVBAR
+    .scroll-up-btn
+      i.fas.fa-angle-up 
+
+    nav.navbar-port 
+      .max-width
+        .logo
+          a(href="#home")
+            ='My'
+            span 
+              ='Web.' 
+      
+        ul.menu 
+          li 
+            a(href="#home").menu-btn
+              ='Home'
+          li 
+            a(href="#about").menu-btn
+              ='About'
+          li
+            a(href="#contact").menu-btn
+              ='Contact'
+      
+        .menu-btn 
+          i.fas.fa-bars
+
+    //- HOME SECTION
+    section.home#home
+      .max-width 
+        .home-content
+          .text-1
+            ='Hello, my name is'
+          .text-2 
+            ='Christian Herbert Fritz'
+          .text-3 
+            ="And I'm an Informatics Student at University of Gunadarma"
+            span.typing
+          a(href="#about")
+            ='Here me'
+
+    //- ABOUT SECTION
+    section.about#about 
+      .max-width 
+        h2.title 
+          ='About me'
+        .about-content 
+          .column.left 
+            img(src="https://storage.googleapis.com/aplikasi-profile.appspot.com/images/img2.jpg", alt="")
+
+          .column.right 
+            .text 
+              ="Saya Tian"
+              span.typing-2
+            p 
+              ='dan Saya berkuliah di Universitas Gunadarma dengan mengambil jurusan Informatika'
+            a(href="https://www.instagram.com/christhfs/")
+              ='Instagram'
+
+    //- CONTACT SECTION
+    section.contact#contact 
+      .max-width 
+        h2.title
+          ='Contact me'
+        .contact-content 
+          .column.left 
+            .icons 
+              .row 
+                .col-md-1 
+                  i.fas.fa-user 
+                .col-md-11 
+                  .info 
+                    .head 
+                      ='Name'
+                    .sub-title 
+                      ='Christian Herbert Fritz'
+
+              .row 
+                .col-md-1 
+                  i.fas.fa-map-marker-alt  
+                .col-md-11 
+                  .info 
+                    .head 
+                      ='Address'
+                    .sub-title 
+                      ='Jakarta'
+
+              .row 
+                .col-md-1 
+                  i.fas.fa-envelope  
+                .col-md-11 
+                  .info 
+                    .head 
+                      ='Email'
+                    .sub-title 
+                      ='c172dsx4852@bangkit.academy'
+
+          .column.right
+            .text 
+              ='Message me'
+            form(action="#")
+              .row 
+                .col-md-6 
+                  input(type="text", placeholder="Name").form-control
+                .col-md-6 
+                  input(type="email", placeholder="Email").form-control
+              .col-md-12 
+                input(type="text", placeholder="Subject").form-control
+              .col-md-12.mt-3
+                textarea(name="", cols="3", rows="4", placeholder="Message...").form-control
+              .button-area.mt-3
+                  button(type="submit")
+                    ='Send message'
+
+    //- FOOTER SECTION
+    footer 
+      span 
+        ='Created By Christian Herbert Fritz'
+        span.far.fa-copyright
+        =' 2023 All rights reserved.'
+
+    script(src="assets/js/script.js") 
